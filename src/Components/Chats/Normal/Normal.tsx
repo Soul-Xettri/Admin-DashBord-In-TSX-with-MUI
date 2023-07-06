@@ -18,12 +18,12 @@ const data = [
   {name:"June", total:1700},
 ];
 
-export default function Normal() {
+export default function Normal({aspect,title}:any) {
   return (
     <div className="normal">
-      <div className="title">Last 6 Months (Revenue)</div>
+      <div className="title">{title}</div>
       {" "}
-      <ResponsiveContainer width="100%" aspect={2/1}>
+      <ResponsiveContainer width="100%" aspect={aspect}>
         <AreaChart
           width={730}
           height={250}
