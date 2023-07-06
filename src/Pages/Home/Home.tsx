@@ -6,10 +6,11 @@ import BasicTable from "../../Components/Table/Table"
 import Widget from "../../Components/Widget/Widget"
 import "./Home.scss"
 
-export default function Home() {
+
+export default function Home({setMode}:any) {
   return (
     <div className="home">
-        <Sidebar/>
+        <Sidebar setMode={setMode}/>
         <div className="homeContainer"><Navbar/>
         <div className="widgets">
           <Widget type="user"/>

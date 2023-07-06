@@ -26,6 +26,7 @@ export default function DataTable() {
         </Link>
       </div>
       <DataGrid
+      className="dataGrid"
         rows={userRows}
         columns={userColumns.concat(actionColumn)}
         initialState={{

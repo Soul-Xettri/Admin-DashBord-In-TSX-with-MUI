@@ -4,7 +4,7 @@ import Sidebar from '../../Components/Sidebar/Sidebar';
 import './New.scss';
 import DriveFolderUploadOutlinedIcon from '@mui/icons-material/DriveFolderUploadOutlined';
 
-export default function New({ inputs, title }: any) {
+export default function New({ inputs, title ,setMode }: any) {
   const [file, setFile] = useState<File | null>(null);
 
   console.log(file);
@@ -18,7 +18,7 @@ export default function New({ inputs, title }: any) {
 
   return (
     <div className="new">
-      <Sidebar />
+      <Sidebar setMode={setMode} />
       <div className="newContainer">
         <Navbar />
         <div className="top">

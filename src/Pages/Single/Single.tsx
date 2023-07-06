@@ -4,10 +4,10 @@ import Sidebar from "../../Components/Sidebar/Sidebar";
 import BasicTable from "../../Components/Table/Table";
 import "./Single.scss";
 
-export default function Single() {
+export default function Single({setMode}:any) {
   return (
     <div className="single">
-      <Sidebar />
+      <Sidebar setMode={setMode}/>
       <div className="singleContainer">
         <Navbar />
         <div className="top">
