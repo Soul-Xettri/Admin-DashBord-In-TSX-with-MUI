@@ -7,6 +7,7 @@ import New from "./Pages/New/New";
 import { ProductInputs, UserInputs } from "./Pages/New/FormSource";
 import "./Style/dark.scss";
 import{useState} from "react"
+import MiniDrawer from "./Pages/Text";
 
 function App() {
   const[dark,setDark]=useState(false)
@@ -33,6 +34,7 @@ function App() {
                 element={<New inputs={ProductInputs} title="Add New Product" setMode={setDark}/>}
               />
             </Route>
+            <Route path='dash' element={<MiniDrawer/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
